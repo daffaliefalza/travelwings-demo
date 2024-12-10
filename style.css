@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+body,
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* reusable style */
+
+.colored {
+  color: #6b8e23;
+}
+
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+/* header  style*/
+
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/banner.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  justify-content: space-between;
+}
+
+header nav .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header nav ul {
+  gap: 30px;
+  align-items: center;
+  display: flex;
+  font-size: 18px;
+  color: #fff;
+  list-style-type: none;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+header .hero {
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+header .hero h1 {
+  font-size: 48px;
+  color: #fff;
+  font-weight: 800;
+}
+
+header .hero .cta {
+  background-color: #6b8e23;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 35px;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+header .hero .cta:hover {
+  background-color: #4d6817;
+}
+
+/* header style end */
+
+/* about style  */
+
+.about img {
+  width: 300px;
+}
+
+.about .container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 50px;
+}
+
+.about .about-message h2 {
+  color: #1f2937;
+  font-size: 32px;
+}
+
+.about .about-message p {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  text-align: justify;
+}
+.about .about-message span {
+  color: #8a8a8a;
+}
+
+/* about style end */
+
+/* services style */
+
+.services {
+  background-color: #f4f4f4;
+  padding: 80px 0;
+}
+
+.services-title {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.services-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.services-wrapper .service {
+  background-color: #fff;
+  padding: 15px 25px;
+  width: 48%;
+}
+
+.services-wrapper .service p {
+  color: #8a8a8a;
+  margin-top: 5px;
+}
+
+/* services style end */
+
+/* destination style */
+
+.destinations {
+  padding: 80px 0;
+}
+
+.destinations-title {
+  text-align: center;
+  margin: 20px 0;
+  color: #1f2937;
+}
+
+.destinations-wrapper {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  gap: 20px;
+}
+
+.destination {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.destination img {
+  width: 100%;
+}
+
+.destination h3 {
+  font-size: 1.5rem;
+  margin: 15px 0;
+  color: #1f2937;
+  text-align: center;
+}
+
+.destination p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.selengkapnya {
+  background-color: #6b8e23;
+  text-decoration: none;
+  padding: 10px 25px;
+  display: flex;
+  justify-content: center;
+  width: max-content;
+  margin: 40px auto;
+  color: #fff;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+.selengkapnya:hover {
+  background-color: #486411;
+}
+
+/* destination style end */
+
+/* contact style */
+
+.contact {
+  background-color: #f4f4f4;
+  padding: 80px 0;
+}
+
+.contact-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  background-color: #fff;
+  max-width: 500px;
+  margin-inline: auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px #0000001a;
+}
+
+form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+form input,
+textarea {
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  display: flex;
+  justify-content: center;
+  width: max-content;
+  padding: 10px 20px;
+  margin: 20px auto;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+/* contact style end */
+
+footer {
+  background-color: #2e3239;
+  color: #fff;
+  text-align: center;
+  padding: 16px;
+}
+
+.top {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  z-index: 99999;
+  width: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: rgb(81, 159, 177);
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.active {
+  display: inline-block;
+}
+
+@media (max-width: 950px) {
+  header {
+    background-position: center;
+  }
+}
+
+@media (max-width: 650px) {
+  nav {
+    flex-direction: column !important;
+  }
+
+  nav ul {
+    margin-top: 10px;
+    font-size: 14px !important;
+  }
+
+  header h1 {
+    font-size: 32px !important;
+  }
+
+  header .cta {
+    font-size: 16px !important;
+  }
+
+  .about .container {
+    flex-direction: column;
+    padding: 30px !important;
+  }
+
+  .services-wrapper .service {
+    width: 100%;
+  }
+
+  .destinations-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
